@@ -1,2 +1,13 @@
 .btn {
+   padding: 0;
+
+   background-color: transparent;
+   border: none;
+
+   min-width: 182px;
+   background-color: transparent;
+   border: 1px solid $white-opacity;
+   border-radius: 50px;
+   color: $c-main;
+   padding: 15px;
 }

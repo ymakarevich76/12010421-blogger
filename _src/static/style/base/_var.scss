@@ -1,13 +1,16 @@
 // //////////////////////////////////////// font-family
-$ff-main: "Roboto", sans-serif;
+$ff-main: "SF-UI-Display", sans-serif;
 
 // //////////////////////////////////////// font-size
 $fz-main: 16px;
 
 // //////////////////////////////////////// colors 
-$c-main: #000;
+$c-main: #fff;
+$white-opacity: rgba(255, 255, 255, 0.3);
 $c-secondary: gray;
-$c-accent: orange;
+$c-accent: #ffc361;
+$c-blue: #95f3ff;
+$c-purple: #5833a8;
 
 // //////////////////////////////////////// breakpoints
 $sl: 1499.98px;
@@ -16,7 +19,7 @@ $lg: 991.98px;
 $md: 767.98px;
 $sm: 575.98px;
 $xs: 425.98px;
-$ss: 359.98px;
+$ss: 375.98px;
 
 // //////////////////////////////////////// grid
 .row {

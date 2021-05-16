@@ -1,2 +1,45 @@
 .header {
+   position: absolute;
+   top: 25px;
+   left: 0;
+   z-index: 100;
+   width: 100%;
+
+   @media (max-width: 1310px) {
+      // top: 0;
+   }
+}
+
+.header__container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+.header__logo {
+
+   @media (min-width: 1310px) {
+      margin-right: 90px;
+   }
+}
+
+.header__nav {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content:flex-end;
+   width: auto;
+
+   @media (max-width: $md) {
+      width: 100%;      
+   }
+   
+   @media (max-width: $sm) {
+      display: none;
+   }
+
+   @media (min-width: 1310px) {
+      flex-wrap: wrap;
+   }
 }

@@ -5,9 +5,7 @@
 
 // ///////////////////////////////////////// block
 @import "block/container";
-@import "block/section";
 
-@import "block/button/btn-reset";
 @import "block/button/btn";
 
 // @import "block/link/link-stretched";
@@ -30,3 +28,6 @@
 
 // ///////////////////////////////////////// display
 // @import "base/display";
+
+@import "block/nav";
+@import "block/intro";
