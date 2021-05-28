@@ -4,10 +4,6 @@
    left: 0;
    z-index: 100;
    width: 100%;
-
-   @media (max-width: 1310px) {
-      // top: 0;
-   }
 }
 
 .header__container {
@@ -18,7 +14,6 @@
 
 
 .header__logo {
-
    @media (min-width: 1310px) {
       margin-right: 90px;
    }

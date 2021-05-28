@@ -4,9 +4,14 @@ body {
   min-width: 320px;
   min-height: 100vh;
 
-  font-size: $fz-main;
   font-family: $ff-main;
-  color: $c-main;
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 24px;
+  
+  background-color: $c-grey;
+  color: $c-brown-opacity;
+
   overflow-x: hidden;
 }
 

@@ -17,6 +17,10 @@
    &--footer  {
       display: flex;
       flex-direction: column;
+
+      @media (max-width: $lg) {
+         align-items: center;
+      }
    }
 }
 
@@ -26,6 +30,7 @@
 
    &--footer {
       padding-bottom: 15px;
+      margin-right: 0;
    }
 }
 
@@ -75,6 +80,11 @@
    @media (max-width: $sm) {
       display: none;
    }
+}
+
+.nav__btn-check,
+.nav__btn-input {
+   border: 1px solid $white-opacity;
 }
 
 .nav__btn-check {

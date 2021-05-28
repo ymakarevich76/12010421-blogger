@@ -8,3 +8,24 @@
    text-transform: uppercase;
 }
 
+.title-2 {
+   font-family: $ff-main;
+   font-weight: 700;
+   font-size: 56px;
+   line-height: 64px;
+   color: $c-brown;
+
+   @media (max-width: $md) {
+      font-size: 40px;
+      line-height: 48px;
+   }
+}
+
+.title-3 {
+   font-family: $ff-main;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 32px;
+   color: $c-brown;
+}
+

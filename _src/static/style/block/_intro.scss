@@ -1,11 +1,20 @@
 .intro {
    padding-top: 20%;
-   background: url('../img/background/bg-wave.png') no-repeat 90%;
+   background: url('../img/background/bg-wave.png') no-repeat 50%;
    min-height: 500px;
    background-size: cover;
    position: relative;
    min-height: 1243px;
    overflow-x: hidden;
+
+   @media (max-width: $xl) {
+      background-position: 90%;
+      padding-bottom: 10%;
+   }
+
+   @media (max-width: $lg) {
+      background-position: 90%;
+   }
 
    @media (min-width: $md) {
       padding-top: 25%;
@@ -45,7 +54,7 @@
    letter-spacing: -1px;
    min-width: 770px;
 
-   @media (max-width: 820px) {
+   @media (max-width: $md) {
       font-weight: 700;
       font-size: 32px;
       line-height: 38px;
@@ -84,6 +93,7 @@
    font-size: 20px;
    line-height: 32px;
    margin-bottom: 40px;
+   color: $c-main;
 
    @media (max-width: 820px) {
       font-size: 16px;
@@ -100,7 +110,12 @@
 }
 
 .intro__wrap-btn {
-   @media (max-width: $md) {
+   @media (max-width: $xl) {
+      display: flex;
+      justify-content: center;
+   }
+
+   @media (max-width: $sm) {
       display: flex;
       justify-content: center;
    }
@@ -124,8 +139,21 @@
    padding: 22px;
    border-radius: 46px;
 
+   @media (max-width: $md) {
+      display: none;
+   }
+
+   &--mob {
+      display: none;
+
+      @media (max-width: $md) {
+         display: block;
+         background: linear-gradient(to bottom right, #93f6a5, #58d2e5);
+      }
+   }
+
    &::after {
-      content: "Начать";
+      content: 'Начать';
       display: block;
       font-family: $ff-main;
       font-weight: 700;
@@ -134,6 +162,10 @@
       background: linear-gradient(to bottom right, #93f6a5, #58d2e5);
       background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      @media (max-width: $md) {
+         display: none;
+      }
    }
 }
 

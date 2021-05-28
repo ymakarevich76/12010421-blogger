@@ -1,39 +1,81 @@
 .footer {
-   height: 520px;
-   background: url('../img/background/bg-footer.png') no-repeat;
+   height: auto;
+   background: url('../img/background/bg-footer.png') 50% no-repeat;
+   background-size: cover;
+
+   @media (max-width: $sm) {
+      background: url('../img/background/bg-footer-mob.png') no-repeat;
+      background-size: cover;
+   }
 }
 
-.footer__container {
+.footer__inner {
    display: flex;
    justify-content: center;
    padding-top: 15%;
+   border-bottom: 1px solid $white-opacity;
+   max-width: 1170px;
 
-   &::after {
-      content: '';
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 30px;
-      width: 1170px;
-      height: 1px;
-      padding-left: 15px;
-      background-color: $white-opacity;
+   @media (max-width: $lg) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding-bottom: 50px;
+   }
 
+   @media (max-width: $lg) {
+      padding-top: 25%;
    }
 }
 
 .footer__logo {
    margin-right: 15%;
+
+   @media (max-width: $xl) {
+      min-width: 120px;
+   }
+
+   @media (max-width: $lg) {
+      margin-bottom: 40px;
+      margin-right: 0;
+   }
 }
 
 .footer__block {
-   margin-right: 15%;
+   margin-right: 13%;
+   min-width: 146px;
+
+   @media (max-width: $lg) {
+      margin-right: 0;
+      min-width: auto;
+   }
+
+   &:last-child {
+      margin-right: 10%;
+
+      @media (max-width: $xl) {
+         margin-right: 0;
+      }
+   }
+}
+
+.footer__title {
+   @media (max-width: $lg) {
+      text-align: center;
+   }
 }
 
 .footer__social {
    display: flex;
    justify-content: center;
    max-width: 160px;
+
+   @media (max-width: $lg) {
+      margin-right: 0;
+      min-width: auto;
+   }
+
 }
 
 .footer__social-item {
@@ -41,4 +83,53 @@
    justify-content: center;
    align-items: center;
    margin-right: 10px;
+}
+
+.footer__copyright {
+   max-width: 1170px;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 5%;
+
+   @media (max-width: $lg) {
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+.footer__copyright-box {
+   &:first-child {
+      color: $white-opacity;
+
+      @media (max-width: $sm) {
+         text-align: center;
+      }
+   }
+
+   &:last-child {
+      @media (max-width: $lg) {
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+      }
+   }
+}
+
+.footer__copyright-box br {
+   display: none;
+
+   @media (max-width: $sm) {
+      display: block;
+   }
+}
+
+.footer__copyright-text {
+
+   &:last-child {
+      display: none;
+
+      @media (max-width: $lg) {
+         display: block;
+      }
+   }
 }
