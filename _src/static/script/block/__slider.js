@@ -4,7 +4,7 @@ new Swiper('.carousel__slider-1', {
       prevEl: '.swiper-button-prev'
    },
    slidesPerView: 3,
-   spaceBetween: 30,
+   spaceBetween: 15,
    loop: true,
    breakpoints: {
       992: {
@@ -27,4 +27,13 @@ new Swiper('.carousel__slider-2', {
    slidesPerView: 1,
    initialSlide: 2,
    loop: true,
+});
+
+new Swiper('.test', {
+   grabCursor: true,
+   loop: true,
+   nested: true,
+   spaceBetween: 10,
+   width: 400,
+   slidesPerView: 3,
 });

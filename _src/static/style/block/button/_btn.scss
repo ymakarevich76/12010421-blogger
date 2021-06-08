@@ -13,8 +13,8 @@
    &--color {
       min-width: 170px;
       background: linear-gradient(to bottom right, #93f6a5, #58d2e5);
-      border: none;
-      transition: background 0.5s ease;
+      border: transparent;
+      transition: .3s ease;
 
       &:hover {
          background: linear-gradient(to bottom right, rgba(147, 246, 165, .8), rgba(88, 210, 229, .8));
@@ -45,8 +45,8 @@
       }
 
       &:active {
-         background-color: $c-orange;
-         opacity: 0.8;
+         background-color: $c-orange-opacity;
+         border-color: transparent;
       }
    }
 
@@ -56,11 +56,11 @@
       transition: transform .3s ease;
 
       &:hover {
-         transform: scale(1.1);
+         color: $c-purple-dark;
       }
 
       &:active span {
-         border-bottom: 1px solid $c-brown;
+         border-bottom: 1px solid $c-purple-dark;
       }
    }
 }

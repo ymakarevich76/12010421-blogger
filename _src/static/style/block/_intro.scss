@@ -143,7 +143,6 @@
    display: block;
    padding: 22px;
    border-radius: 46px;
-   transition: background .3s ease;
 
    &:hover {
       background: linear-gradient(to bottom right, #93f6a5, #58d2e5);
@@ -156,7 +155,7 @@
 
    &:active {
       background: linear-gradient(to bottom right, #73d384, #4ab0c0);
-      border: none;
+      border: transparent;
 
       &::after {
          background: $c-main;
