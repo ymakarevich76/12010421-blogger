@@ -48,14 +48,13 @@
    @media (max-width: $md) {
       display: block;
    }
+
+   @media (max-width: $ss) {
+      display: none;
+   }
 }
 
 .block-accent__wrap {
    display: flex;
    justify-content: center;
-}
-
-.block-accent__btn {
-   min-width: 170px;
-   background: linear-gradient(to bottom right, #93f6a5, #58d2e5);
 }

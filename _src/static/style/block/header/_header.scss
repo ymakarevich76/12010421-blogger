@@ -10,6 +10,22 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+   padding-right: 30px;
+   padding-left: 30px;
+
+   @media (max-width: $lg) {
+      padding-right: 15px;
+      padding-left: 15px;
+      max-width: 100%;
+   }
+
+   @media (max-width: $md) {
+      max-width: 100%;
+   }
+
+   // @media (max-width: $lg) {
+   //    max-width: 100%;
+   // }
 }
 
 
@@ -19,22 +35,3 @@
    }
 }
 
-.header__nav {
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-   justify-content:flex-end;
-   width: auto;
-
-   @media (max-width: $md) {
-      width: 100%;      
-   }
-   
-   @media (max-width: $sm) {
-      display: none;
-   }
-
-   @media (min-width: 1310px) {
-      flex-wrap: wrap;
-   }
-}

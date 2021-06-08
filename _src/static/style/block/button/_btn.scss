@@ -14,6 +14,15 @@
       min-width: 170px;
       background: linear-gradient(to bottom right, #93f6a5, #58d2e5);
       border: none;
+      transition: background 0.5s ease;
+
+      &:hover {
+         background: linear-gradient(to bottom right, rgba(147, 246, 165, .8), rgba(88, 210, 229, .8));
+      }
+
+      &:active {
+         background: linear-gradient(to bottom right, #73d384, #4ab0c0);
+      }
    }
 
    &--orange {
@@ -28,6 +37,46 @@
       padding: 3px;
       text-decoration: none;
       color: $c-orange;
+      transition:  background-color .3s, color .3s ease;
+
+      &:hover {
+         background-color: $c-orange;
+         color: $c-main;
+      }
+
+      &:active {
+         background-color: $c-orange;
+         opacity: 0.8;
+      }
+   }
+
+   &--brown {
+      color: $c-brown;
+      line-height: 32px;
+      transition: transform .3s ease;
+
+      &:hover {
+         transform: scale(1.1);
+      }
+
+      &:active span {
+         border-bottom: 1px solid $c-brown;
+      }
    }
 }
 
+
+.btn-close {
+   position: absolute;
+   right: 29px;
+   top: 14px;
+   width: 20px;
+   height: 20px;
+   fill: $c-main;
+   display: none;
+   z-index: 1000;
+
+   &--visual {
+      display: block;
+   }
+}

@@ -1,7 +1,5 @@
-.carousel-social__wrap-1 {
-   display: flex;
-   min-width: 0;
-   margin-bottom: 30px;
+.carousel-social {
+
 }
 
 .carousel-social__block {
@@ -12,9 +10,11 @@
    overflow: hidden;
    margin-right: 30px;
 
-   // @media (max-width: $lg) {
-   //    min-width: 330px;
-   // }
+   @media (max-width: $md) {
+     margin-right: 0;
+     max-width: 580px;
+   //   margin-left: 20px;
+   }
 
    &:last-child {
       margin-right: 0;

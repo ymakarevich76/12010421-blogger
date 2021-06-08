@@ -1,6 +1,54 @@
+.nav {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: flex-end;
+   width: auto;
+   position: relative;
+
+   @media (max-width: $md) {
+     display: none;
+     width: 100%;
+     position: absolute;
+     top: -25px;
+     left: 0;
+     background-color: $c-black-opacity;
+     padding: 90px 0;
+     z-index: 1000;
+   }
+   
+   // @media (max-width: $md) {
+   //    width: 100%;
+   //    position: absolute;
+   //    top: -25px;
+   //    left: 0;
+   //    background-color: $c-black-opacity;
+   //    padding: 90px 0;
+   //    z-index: 1000;
+   // }
+
+   @media (min-width: 1310px) {
+      flex-wrap: wrap;
+   }
+
+   &--open {
+
+      @media (max-width: $md) {
+         display: block;
+         width: 100%;
+         position: fixed;
+         top: 0;
+         left: 0;
+         background-color: $c-black-opacity;
+         padding: 90px 0;
+         z-index: 100;
+      }
+   }
+}
+
 .nav__list {
 
-   &--header {
+   &--bottom {
       display: flex;
       justify-content: space-between;
 
@@ -10,15 +58,9 @@
       }
 
       @media (max-width: $md) {
-         display: none;
-      }
-   }
-
-   &--footer  {
-      display: flex;
-      flex-direction: column;
-
-      @media (max-width: $lg) {
+         display: block;
+         width: 100%;
+         justify-content: center;
          align-items: center;
       }
    }
@@ -28,39 +70,34 @@
 .nav__item {
    margin-right: 50px;
 
-   &--footer {
-      padding-bottom: 15px;
-      margin-right: 0;
+   @media (max-width: $md) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+      font-size: 18px;
    }
 }
 
 .nav__link {
    color: $c-main;
+
    &:hover {
       text-decoration: none;
       color: $c-main;
+      border-bottom: 1px solid $c-main;
    }
 }
 
-.nav__icon {
+.nav-icon {
+   display: none;
 
-   &--outside {
-      display: none;
-
-      @media (max-width: $sm) {
-         display: block;
-      }
+   @media (max-width: $md) {
+      display: block;
    }
 
-   &--inside {
-      display: none;
-
-      @media (min-width: $sm) {
-         display: block;
-         order: 1
-      }
-
-      @media (min-width: $md) {
+   &--none {
+      @media (max-width: $md) {
          display: none;
       }
    }
@@ -85,6 +122,19 @@
 .nav__btn-check,
 .nav__btn-input {
    border: 1px solid $white-opacity;
+   transition: background-color .3s ease;
+
+   &:hover {
+      background-color: $white-opacity;
+      color: $white-opacity;
+      border: none;
+   }
+
+   &:active {
+      background-color: $white-opacity;
+      color: $c-main;
+      border: none;
+   }
 }
 
 .nav__btn-check {

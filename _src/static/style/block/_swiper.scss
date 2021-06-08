@@ -1,27 +1,53 @@
 .swiper-button-next,
 .swiper-button-prev  {
-   top: 25%;
+   top: 35%;
    color: $c-purple-light;
 
    &:active,
    &:hover {
       color: $c-purple-opac;
    }
+
+   @media (max-width: $md) {
+      display: none;
+   }
 }
 
 .swiper-button-prev {
-   left: 0;
+   left: -30px;
+
+   @media (max-width: $sl) {
+      left: -10px;
+   }
+
+   @media (max-width: 1250px) {
+      left: 0;
+   }
+
+   @media (max-width: $xl) {
+      left: -30px;
+   }
 }
 
 .swiper-button-next {
-   right: 0;
+   right: -30px;
+
+   @media (max-width: $sl) {
+      right: -10px;
+   }
+
+   @media (max-width: 1250px) {
+      right: 0;
+   }
+
+   @media (max-width: $xl) {
+      right: -30px;
+   }
 }
 
 .swiper-pagination {
-   bottom: 0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   bottom: -60px;
+   left: 45%;
 }
 
 .swiper-pagination-bullet {
@@ -29,6 +55,8 @@
    height: 17px;
    border: 1px solid $c-purple;
    background-color: transparent;
+   margin-right: 13px;
+   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {

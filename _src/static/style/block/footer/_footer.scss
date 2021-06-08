@@ -1,18 +1,18 @@
 .footer {
-   height: auto;
-   background: url('../img/background/bg-footer.png') 50% no-repeat;
+   padding-top: 145px;
+   background: url('../img/background/bg-footer.png') 0% 0% no-repeat;
    background-size: cover;
 
    @media (max-width: $sm) {
       background: url('../img/background/bg-footer-mob.png') no-repeat;
       background-size: cover;
+      padding-top: 108px;
    }
 }
 
 .footer__inner {
    display: flex;
    justify-content: center;
-   padding-top: 15%;
    border-bottom: 1px solid $white-opacity;
    max-width: 1170px;
 
@@ -25,7 +25,7 @@
    }
 
    @media (max-width: $lg) {
-      padding-top: 25%;
+      // padding-top: 25%;
    }
 }
 

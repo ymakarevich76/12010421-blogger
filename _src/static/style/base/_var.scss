@@ -6,8 +6,8 @@ $fz-main: 16px;
 
 // //////////////////////////////////////// colors 
 $c-main: #fff;
-$white-opacity: rgba(255, 255, 255, 0.3);
-$white-opacity-half: rgba(255, 255, 255, 0.5);
+$white-opacity: rgba(255, 255, 255, .3);
+$white-opacity-half: rgba(255, 255, 255, .5);
 $c-secondary: gray;
 $c-accent: #ffc361;
 $c-orange: #ef9357;
@@ -20,9 +20,10 @@ $c-purple-opac: #e2d7ff;
 $c-violet: #c6adff;
 $purple-dark: #1b0639;
 $c-brown: #333333;
-$c-brown-opacity: rgba(51, 51, 51, 0.5);
+$c-brown-opacity: rgba(51, 51, 51, .5);
 $c-grey: #f3eeff;
 $c-grey-light: #f6f4fa;
+$c-black-opacity: rgba(0, 0, 0, .8);
 
 // //////////////////////////////////////// breakpoints
 $sl: 1499.98px;

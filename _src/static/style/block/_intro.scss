@@ -1,24 +1,24 @@
 .intro {
-   padding-top: 20%;
+   padding-top: 270px;
    background: url('../img/background/bg-wave.png') no-repeat 50%;
    min-height: 500px;
    background-size: cover;
    position: relative;
-   min-height: 1243px;
+   min-height: 1380px;
    overflow-x: hidden;
+   margin-bottom: 97px;
 
    @media (max-width: $xl) {
       background-position: 90%;
-      padding-bottom: 10%;
+      padding-bottom: 135px;
    }
 
    @media (max-width: $lg) {
       background-position: 90%;
    }
 
-   @media (min-width: $md) {
-      padding-top: 25%;
-      padding-bottom: 30%;
+   @media (max-width: $md) {
+      padding-top: 90px;
    }
 }
 
@@ -58,6 +58,7 @@
       font-weight: 700;
       font-size: 32px;
       line-height: 38px;
+      min-width: auto;
    }
 }
 
@@ -117,7 +118,7 @@
 
    @media (max-width: $sm) {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
    }
 }
 
@@ -131,6 +132,10 @@
    display: inline-block;
    padding: 3px;
    text-decoration: none;
+
+   &:active {
+      background: linear-gradient(to bottom right, #73d384, #4ab0c0);
+   }
 }
 
 .intro__btn-text {
@@ -138,6 +143,26 @@
    display: block;
    padding: 22px;
    border-radius: 46px;
+   transition: background .3s ease;
+
+   &:hover {
+      background: linear-gradient(to bottom right, #93f6a5, #58d2e5);
+
+      &::after {
+         background: $c-main;
+         background-clip: text;
+      }
+   }
+
+   &:active {
+      background: linear-gradient(to bottom right, #73d384, #4ab0c0);
+      border: none;
+
+      &::after {
+         background: $c-main;
+         background-clip: text;
+      }
+   }
 
    @media (max-width: $md) {
       display: none;
@@ -176,5 +201,9 @@
       padding-bottom: 20px;
       display: flex;
       justify-content: center;
+   }
+
+   @media (max-width: $md) {
+      z-index: 0;
    }
 }
