@@ -2,9 +2,13 @@
 .swiper-button-prev  {
    top: 35%;
    color: $c-purple-light;
+   transition: .3s;
 
-   &:active,
    &:hover {
+      color: $c-violet;
+   }
+   
+   &:active {
       color: $c-purple-opac;
    }
 
