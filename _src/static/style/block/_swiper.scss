@@ -49,11 +49,11 @@
    }
 }
 
-.swiper-pagination {
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
    bottom: -60px;
-   left: 45%;
    display: flex;
    align-items: center;
+   justify-content: center;
 }
 
 .swiper-pagination-bullet {
